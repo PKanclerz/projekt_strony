@@ -1,0 +1,62 @@
+main{
+    display: grid;
+    place-items: center;
+
+}
+.motywy{
+    display: grid;
+      grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+  
+    grid-template-areas: 
+    "zdj1 zdj2 zdj3 . "
+    "nzw1 nzw2 nzw3 . ";
+    column-gap: 2.5em;
+    margin-left: 1em;
+
+}
+
+main>fieldset>h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: 25px;
+}
+.a1{
+    grid-area: zdj1;
+}
+.a2{
+    grid-area: nzw1;
+}
+
+.a4{
+    grid-area: nzw2;
+}
+
+.a3{
+    grid-area: zdj2;
+}
+
+.a5{
+    grid-area: zdj3;
+}
+
+.a6{
+    grid-area:nzw3 ;
+}
+
+
+section>*{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+section * {
+    font-size: 20px;
+    margin-bottom: 2em;
+   margin-right: 1em;
+    margin-left: 1em;
+    
+}
