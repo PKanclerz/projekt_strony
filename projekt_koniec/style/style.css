@@ -1,0 +1,140 @@
+
+/* .menu {
+    margin-left: 40em;
+}
+.menu  * {
+    list-style-type: none;
+    font-size: 1em;
+} */
+
+
+.container{
+    display: grid;
+    grid-template-columns:auto 350px;
+    grid-template-areas: 
+    "glowne poboczne";
+  
+   
+}
+
+.main{
+    display: grid;
+    grid-area: glowne;
+   
+}
+.aside{
+    display: grid;
+    grid-area: poboczne;
+}
+main>main>h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6em;
+    margin-bottom: 0;
+   
+}
+.recenzje {
+    background-color: rgba(255, 255, 255, 0.289);
+    margin-top: 0.3em; 
+   
+    margin-left: 3em;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    height: max-content;
+    margin-bottom: 3em;
+}
+article{
+    display: grid;
+    grid-template-columns:155px  auto;
+    grid-template-areas: 
+    "zdj opis";
+    margin-top: 3em;
+    margin-bottom:3em;
+    margin-left: 1em;
+}
+article>a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+article>img{
+
+    grid-area: zdj;
+    margin-left: 13px;
+}
+article>p{
+   margin-left: 20px;
+    font-size: 18px;
+    grid-area: opis;
+    margin-right: 10px;
+    display: flex;
+    width: 500px;
+}
+
+aside {
+    margin-left: 1em;
+}
+aside>h1{
+    display:flex;
+   justify-content: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns:71px  auto;
+   
+    grid-template-areas: 
+    "zdj1 nazwa1";
+   column-gap: 0.9em;
+   margin-bottom: 0;
+
+}
+.naglowek{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+section>img{
+    margin-left: 0.5em;
+}
+aside:nth-child(2)>img{
+    
+    grid-area: zdj1;
+    
+}
+aside:nth-child(2)>p{
+    grid-area: nazwa1;
+}
+aside:nth-child(3)>img{
+    grid-area: zdj1;  
+}
+aside:nth-child(3)>p{
+    grid-area: nazwa1;
+}
+aside:nth-child(4)>img{
+    grid-area: zdj1;
+}
+aside:nth-child(4)>p{
+    grid-area: nazwa1;
+}
+
+
+.tab{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
