@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+main>p{
+    font-size: 25px;
+
+}
+main>h1{
+    font-size: 30px;
+
+}
+main>h2{
+    font-size: 27px;
+    
+}
